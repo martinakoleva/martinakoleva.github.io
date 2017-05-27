@@ -6,70 +6,212 @@
     <style type="text/css">
       body {
         font-family: "helvetica neue", helvetica, sans-serif;
+        font-weight: 200;
         padding: 0;
         margin: 0;
-        color: #464545;
-      }
-      h1 {
-        margin-top: 10px;
-        margin-bottom: 25px;
-        font-weight: normal;
-      }
-      p {
         font-size: 16px;
-        line-height: 150%;
-        font-weight: 200;
+        color: #2f2f2f;
       }
       a {
-        color: orange;
         text-decoration: none;
       }
 
-      .social a {
-        padding-right: 5px;
-        border-right: 1px solid #8a8888;
+      p {
+        line-height: 150%;
       }
 
-      .social a:last-child {
-        border-right: none;
-      }
-
-      article {
-        padding: 20px;
-        padding-bottom:0;
-        max-width: 430px;
-        margin-left: auto;
-        margin-right: auto;
-      }
       img {
-        margin-top: 30px;
         max-width: 100%;
       }
 
+      .content {
+        padding: 8% 4%;
+        overflow: hidden;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .intro img.martina {
+        float: left;
+        width: 25%;
+        position: relative;
+        top: 2px;
+      }
+
+      .intro .content {
+        padding-bottom: 0;
+      }
+
+      .intro .text {
+        float: right;
+        width: 45%;
+        margin: 1rem 0;
+      }
+
+      .intro h1 {
+        font-weight: 400;
+        font-size: 3rem;
+      }
+      .intro h1 strong {
+        display: block;
+        font-weight: 700;
+        font-size: 7rem;
+      }
+
+      .intro p {
+        font-size: 1.2rem;
+        line-height: 150%;
+      }
+
+      .about {
+        background-color: #ebebeb;
+      }
+
+      .about .text {
+        float: left;
+        width: 50%;
+      }
+
+      .about img.ruby {
+        float: right;
+        width: 44%;
+      }
+
+      .about h2 {
+        font-weight: 400;
+        font-size: 2rem;
+      }
+
+      footer {
+        background-color: #2f2f2f;
+        color: #fff;
+        text-align: center;
+      }
+
+      footer h3 {
+        font-weight: 200;
+        font-size: 2rem;
+      }
+
+      footer p {
+        font-size: 1.2rem;
+      }
+
+      footer a {
+        color: #fff;
+      }
+
+      ul.social {
+        list-style: none;
+        padding: 0;
+        margin: 4rem;
+      }
+      ul.social li {
+        display: inline-block;
+        margin: 0 10px;
+      }
+      ul.social li img {
+        width: 80px;
+        height: 80px;
+        border: none;
+        -ms-transition: transform 0.2s ease-in-out;
+        -webkit-transition: transform 0.2s ease-in-out;
+        transition: transform 0.2s ease-in-out;
+      }
+      ul.social li img:hover {
+        -ms-transform: scale(1.2, 1.2);
+        -webkit-transform: scale(1.2, 1.2);
+        transform: scale(1.2, 1.2);
+      }
     </style>
   </head>
   <body>
-    <article>
-      <h1>Martina Koleva.</h1>
+    <section class="intro">
+      <div class="content">
+        <img src="images/martina.png" alt="A photo of Martina" class="martina">
 
-      <p>A marketing professional and a design enthusiast with experience in project management, branding and event organization. Passionate about creating experiences that inspire.</p>
+        <div class="text">
+          <h1>
+            <strong>Hi!</strong> I’m Martina
+          </h1>
 
-      <p>I have a strong interest in child education and I am a co-founder of 
-        <a target="_blank" href="http://www.coderdojobulgaria.com">CoderDojo Bulgaria</a>, member of the 
-        <a target="_blank" href="http://railsgirls.com/sofia">Rails Girls Sofia</a> organization team and a spirited volunteer at 
-        <a target="_blank" href="http://banskofilmfest.com/">Bansko Film Fest</a>.</p>
+          <p>
+            I am a marketing professional and a design enthusiast with 
+            experience in project management, branding and event
+            organization. Passionate about creating experiences
+            that inspire.
+          </p>
+        </div>
+      </div>
+    </section>
 
-      <p>Drop me a line at: hi@martinakoleva.com</p>
+    <section class="about">
+      <div class="content">
+        <div class="text">
+          <h2>Passionate about</h2>
 
-      <p class="social">
-        Find me on:
-        <a target="_blank" href="https://bg.linkedin.com/in/martinakoleva">LinkedIn</a>
-        <a target="_blank" href="https://twitter.com/CactusMactus">Twitter</a>
-        <a target="_blank" href="https://www.facebook.com/cactusmactus">Facebook</a>
-        <a target="_blank" href="https://www.instagram.com/cactusmactus/">Instagram</a>
-        <a target="_blank" href="https://github.com/martinakoleva">GitHub</a>
-      </p>
-      <img src="martina.jpg">
-    </article>
+          <p>
+            I have a strong interest in child
+            education and I am a co-founder of 
+            CoderDojo Bulgaria.
+          </p>
+
+          <p>
+            I have translated Hello Ruby in 
+            Bulgarian – a children’s book about computers, technology and coding. Since then, I have organised monthly workshops for children aged 5 to 7, where we learn basic programming concepts via activities that develop their computational thinking.
+          </p>
+
+          <p>
+            I am also a member of the Rails Girls Sofia organization team and a spirited volunteer at Bansko Film Fest.
+          </p>
+        </div>
+
+        <img src="images/ruby.png" alt="Ruby and her treasures" class="ruby">
+      </div>
+    </section>
+
+    <footer>
+      <div class="content">
+        <h3>Want to know more about me?</h3>
+
+        <ul class="social">
+          <li>
+            <a href="https://www.linkedin.com/in/martinakoleva/">
+              <img src="images/linkedin.png" alt="LinkedIn">
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/cactusmactus/">
+              <img src="images/twitter.png" alt="Twitter">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/cactusmactus">
+              <img src="images/facebook.png" alt="Facebook">
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/martinakoleva">
+              <img src="images/github.png" alt="GitHub">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/cactusmactus/">
+              <img src="images/instagram.png" alt="Instagram">
+            </a>
+          </li>
+        </ul>
+
+        <p>
+          If you want say hi, drop me a line at:
+        </p>
+
+        <p>
+          <a href="mailto:hi@martinakoleva.com">
+            hi@martinakoleva.com
+          </a>
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
