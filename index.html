@@ -13,7 +13,9 @@
         color: #2f2f2f;
       }
       a {
+        color: #2f2f2f;
         text-decoration: none;
+        font-weight: 400;
       }
 
       p {
@@ -25,13 +27,13 @@
       }
 
       .content {
-        padding: 8% 4%;
+        padding: 8% 6%;
         overflow: hidden;
         max-width: 800px;
         margin: 0 auto;
       }
 
-      .intro img.martina {
+      .intro img {
         float: left;
         width: 25%;
         position: relative;
@@ -72,7 +74,7 @@
         width: 50%;
       }
 
-      .about img.ruby {
+      .about img {
         float: right;
         width: 44%;
       }
@@ -104,32 +106,69 @@
       ul.social {
         list-style: none;
         padding: 0;
-        margin: 4rem;
+        margin: 4rem 0;
+        width: 100%;
       }
       ul.social li {
         display: inline-block;
-        margin: 0 10px;
-      }
-      ul.social li img {
-        width: 80px;
-        height: 80px;
-        border: none;
+        width: 10%;
+        height: 10%;
+        margin: 0 2%;
         -ms-transition: transform 0.2s ease-in-out;
         -webkit-transition: transform 0.2s ease-in-out;
         transition: transform 0.2s ease-in-out;
       }
-      ul.social li img:hover {
+      ul.social li:hover {
         -ms-transform: scale(1.2, 1.2);
         -webkit-transform: scale(1.2, 1.2);
         transform: scale(1.2, 1.2);
+      }
+      ul.social li img {
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+
+      @media (max-width: 650px) {
+        .about .text,
+        .intro .text {
+          float: none;
+          width: 100%;
+        }
+
+        .about img,
+        .intro img {
+          float: none;
+          width: auto;
+          max-width: 80%;
+          margin-top: 2rem;
+        }
+
+        .intro .content {
+          padding-top: 2%;
+        }
+
+        .content {
+          text-align: center;
+        }
+
+        .content .text {
+          text-align: left;
+        }
+
+        ul.social {
+          margin: 3rem 0;
+        }
+
+        footer p {
+          font-size: 1rem;
+        }
       }
     </style>
   </head>
   <body>
     <section class="intro">
       <div class="content">
-        <img src="images/martina.png" alt="A photo of Martina" class="martina">
-
         <div class="text">
           <h1>
             <strong>Hi!</strong> I’m Martina
@@ -142,6 +181,8 @@
             that inspire.
           </p>
         </div>
+
+        <img src="images/martina.png" alt="A photo of Martina" class="martina">
       </div>
     </section>
 
@@ -153,16 +194,16 @@
           <p>
             I have a strong interest in child
             education and I am a co-founder of 
-            CoderDojo Bulgaria.
+            <a href="http://coderdojobulgaria.com/">CoderDojo Bulgaria</a>.
           </p>
 
           <p>
-            I have translated Hello Ruby in 
-            Bulgarian – a children’s book about computers, technology and coding. Since then, I have organised monthly workshops for children aged 5 to 7, where we learn basic programming concepts via activities that develop their computational thinking.
+            I have translated <a href="https://www.amazon.com/Hello-Ruby-Adventures-Linda-Liukas/dp/1250065003">Hello Ruby</a> in 
+            <a href="https://egmontbulgaria.com/programirane-za-detsa-663/zdravey-rubi-prikljuchenija-v-programiraneto-p2996">Bulgarian</a> – a children’s book about computers, technology and coding. Since then, I have organised monthly workshops for children aged 5 to 7, where we learn basic programming concepts via activities that develop their computational thinking.
           </p>
 
           <p>
-            I am also a member of the Rails Girls Sofia organization team and a spirited volunteer at Bansko Film Fest.
+            I am also a member of the <a href="http://railsgirls.com/sofia">Rails Girls Sofia</a> organization team and a spirited volunteer at <a href="http://banskofilmfest.com/">Bansko Film Fest</a>.
           </p>
         </div>
 
